@@ -1,0 +1,154 @@
+body {
+    /* Apply fadeIn animation to the body with a duration of 0.75 seconds */
+    animation: fadeIn 0.75s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section {
+    /* Style settings for the section element */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+h1 span{
+    color: #36b8f4;
+}
+/* Exit Button Styles */
+
+.exit {
+    position: fixed; 
+    color: #ffffff;
+    top: 5px; 
+    right: 5px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.exit i{
+    color: #000000;
+}
+/* Exit Button Hover and Active Styles */
+.exit:hover {
+    background-color: #36b8f4;
+}
+
+.exit:active {
+    background-color: #dfdfdf;
+}
+
+.background-image {
+    /* Style settings for elements with the class 'background-image' */
+    flex: 5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.dragon, .tiger, .wolf, .dci {
+    /* Styling for elements with classes 'dragon', 'tiger', 'wolf', 'dci' */
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}   
+
+/* Styling for the background image of Department of Teacher Education */
+.image1 { 
+    background-image: url("image/dtefront.png");
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    margin-left: 3px;
+}
+
+/* Styling for the background image of Department of Business and Accountancy */
+.image2 { 
+    background-image: url("image/tigerbg.png"); 
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    margin-left: 3px;
+}
+
+/* Styling for the background image of Department of Arts and Sciences */
+.image3 { 
+    background-image: url("image/dasfront.png"); 
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+/* Styling for the background image of Department of Computing and Informatics */
+.image4 { 
+    background-image: url("image/dcifront2.png"); 
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.name {
+    /* Styling for elements with the class 'name' */
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+/* Media query for screens smaller than 900px */
+@media only screen and (max-width: 900px) {
+    section {
+        /* Style settings for the section element */
+        height: 400vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .dragon, .tiger, .wolf, .dci {
+        width: 100%; /* Make the elements take full width */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .exit {
+        top: 20px;
+        right: 20px;
+    }
+
+    .image1, .image2, .image3, .image4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

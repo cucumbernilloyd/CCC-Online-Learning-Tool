@@ -1,0 +1,68 @@
+body {      
+        background-image: url('image/bg.png');
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+         background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        }
+        .exit {
+            position: fixed; 
+            color: #ffffff;
+            top: 5px; 
+            right: 5px;
+            padding: 5px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .exit i{
+            color: #000000;
+        }
+        /* Exit Button Hover and Active Styles */
+        .exit:hover {
+            
+            font-size: 30px;
+            transition: .5s;
+        }
+        
+        .exit:active {
+            background-color: #dfdfdf;
+        }
+        .quote-container {
+            margin-bottom: 10%;
+            max-width: 1800px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        .quote {
+            font-size: 3rem;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: em;
+            line-height: 1.5;
+            color: #333;
+        }
+        .quote span{
+            color: #1a76d1;
+        }
+        /* Media Query for screens with a max-width of 900px */
+    @media only screen and (max-width: 900px) {
+    .quote-container {
+        max-width: 100%; 
+        margin: 5%; 
+    }
+
+    .quote {
+        font-size: 2rem;
+}}

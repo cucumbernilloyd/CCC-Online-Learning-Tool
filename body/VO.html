@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="VO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="x-icon" href="image/ccc-home-logo.png">
+    <title>Welcome to Learning</title>
+</head>
+<body>
+    <div class="exit">
+        <!-- Link to exit or go back to index.html -->
+        <a href="MAIN.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+    </div>
+    
+    
+    </div>
+    <div class="quote-container">
+        <audio autoplay id="voiceOver">
+            <source src="image/vo/welcome-vo.mp3" type="audio/mp3">
+        </audio>
+        <p class="quote"> <i>"I know you're here to <span>learn</span> , so feel free to add to it. The content I'm creating is a warm <span>welcome</span> to new students eager to <span>learn and grow</span>."</i> </p>
+    </div>
+</body>
+ <!-- js script for loading function to auto voiceover -->
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+        var voiceOver = document.getElementById('voiceOver');
+        voiceOver.play().catch(function(error) {
+            // Autoplaying
+            console.error('Autoplay error:', error);
+        });
+    });
+</script>
+</html>

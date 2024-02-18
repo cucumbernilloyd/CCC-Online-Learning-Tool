@@ -1,0 +1,73 @@
+body {
+    /* Apply transitionIn animation to the body with a duration of 0.75 seconds */
+    animation: transitionIn 0.75s;
+    font-family: 'Poppins';
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.deg-text
+{
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+.content 
+{
+  margin: 50px;
+  font-size: 15px; /* Adjust font size for content */
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.this-is-ccc {
+    display:block;
+    margin-left: 80px; /* Adjust left margin for this element */
+    max-width: 100%; 
+    padding-bottom: 20px;
+}
+
+.container-fluid
+{
+    margin-left:50px; /* Add left margin to the container-fluid */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black; /* Add a border around the table */
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center; /* Center the text in the header cells */
+}
+
+.centered {
+    text-align: center; /* Center the "First Year" heading */
+    background-color: #86BBD8;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center; /* Center the content in the footer */
+}

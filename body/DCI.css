@@ -1,0 +1,86 @@
+body {
+    /* Apply transitionIn animation to the body with a duration of 0.75 seconds */
+    animation: transitionIn 0.75s;
+    background-image: url(image/dcipage2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: start; 
+    justify-content: flex-start; 
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content {
+    /* Styling for the main content section */
+    max-width: 50%;
+    text-align: justify;
+    color: #fff;
+    margin: 50px auto; 
+    margin-top: 100px;
+    
+}
+
+h1, h2, p {
+    /* Styling for heading and paragraph elements */
+    color: antiquewhite;
+}
+
+.dci {
+    /* Styling for elements with the class 'dci' */
+    width: 350px;
+    height: 350px;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.button {
+    /* Styling for elements with the class 'button' */
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+}
+
+.button:hover {
+    /* Hover effect for the button, removing text decoration */
+    text-decoration: none; 
+
+}
+
+.button:hover::after {
+    /* Styling for the hover effect line below the button */
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    bottom: -2px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff; 
+    transition: all 0.3s; 
+}
+
+.courses-list {
+    /* Styling for the list of courses */
+    list-style: none;
+    padding: 0;
+}
+
+.courses-list li {
+    /* Styling for list items within the courses list */
+    color: #fff;
+}

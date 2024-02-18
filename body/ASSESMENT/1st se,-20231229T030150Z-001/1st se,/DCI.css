@@ -1,0 +1,5 @@
+body {
+    /* Apply transitionIn animation to the body with a duration of 0.75 seconds */
+    animation: transitionIn 0.75s;
+    font-family: 'Poppins', sans-serif;
+}

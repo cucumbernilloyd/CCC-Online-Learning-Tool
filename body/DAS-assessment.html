@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="image/ccc-home-logo.png">
+    <title>Assessment Form</title>
+</head>
+<body>
+    <!-- Heading for the assessment form -->
+    <h1>Department of Art and Science Assessment Form</h1>
+    
+    <!-- Form element with an action to 'submit.php' using the POST method -->
+    <form id="assessmentForm" action="submit.php" method="post">
+    
+        <!-- Question 1 with options -->
+        <h2>Question 1:</h2>
+        <p>What is the capital of Italy?</p>
+        
+        <!-- Input field for user's answer to the Question -->
+        <input type="text" id="q1Answer" placeholder="Your Answer">
+
+        <!-- Question 2 -->
+        <h2>Question 2:</h2>
+        <p>Which gas do plants absorb from the atmosphere during photosynthesis?</p>
+        
+        <input type="text" id="q2Answer" placeholder="Your Answer">
+
+        <!-- Question 3 -->
+        <h2>Question 3:</h2>
+        <p>How many continents are there in the world?</p>
+        
+        <input type="text" id="q3Answer" placeholder="Your Answer">
+
+        <!-- Button to submit the form and trigger the checkAnswers() function -->
+        <button onclick="checkAnswers()">Submit</button>
+    
+    </form>
+</body>
+</html>
